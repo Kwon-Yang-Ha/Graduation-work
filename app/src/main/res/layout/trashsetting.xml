@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFD485"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/suninput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/satinput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/satinput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/suninput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/friinput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="토요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/satinput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/friinput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/satinput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/thuinput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="금요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toStartOf="@+id/friinput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/thuinput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/friinput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/weninput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="목요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toStartOf="@+id/thuinput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/tueinout"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/weninput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/moninput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/weninput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/thuinput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/tueinout"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="수요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toStartOf="@+id/weninput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="화요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/tueinout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="79dp"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/white"
+            android:text="저장"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suninput"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="월요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toStartOf="@+id/moninput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/moninput"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radius_background"
+            android:ems="10"
+            android:hint="입력해주세요."
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/tueinout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text="일요일"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/suninput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="244dp"
+            android:layout_height="22dp"
+            android:background="@drawable/radius_whitebackground"
+            android:text="요일별 쓰레기 배출 종류를 입력해주세요 !"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:background="@drawable/radius_whitebackground"
+            android:text="쓰레기 배출 설정"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

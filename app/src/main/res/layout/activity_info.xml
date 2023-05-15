@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/sc_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/view_border"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_terms"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:text="[개인정보 수집 및 이용 동의서]\n\n주식회사 ABC는 「개인정보보호법」 등 관련 법령상의 개인정보 보호 규정을 준수하며, 이용자의 개인정보 보호를 소중히 여기고 있습니다. 이에 회사는 이용자의 개인정보를 안전하게 관리하고 이용자의 동의 없이는 본래 목적 외의 다른 용도로는 사용하지 않습니다.\n\n회사는 이용자의 개인정보를 수집하는 경우 개인정보 보호법에 따라 반드시 사전에 이용자에게 알리고 동의를 받아야 합니다. 본 동의서는 회사가 수집하는 개인정보의 항목, 수집 목적, 이용 기간, 개인정보의 보유 및 이용에 대한 동의, 개인정보 제공 및 처리 위탁에 대한 동의 등에 대한 내용을 안내하며, 이에 대한 동의 여부를 확인 받는 것입니다.\n\n1. 수집하는 개인정보 항목\n- 필수항목 : 이름, 아이디, 비밀번호, 생년월일, 이메일 주소, 휴대폰 번호\n- 선택항목 : 성별, 주소\n2. 수집하는 개인정보의 이용 목적\n- 회원 가입 및 관리\n- 제품 및 서비스 제공\n이벤트 및 마케팅 활동, 광고성 정보 제공\n3. 개인정보 보유 및 이용 기간\n- 회원 탈퇴 시까지\n4. 개인정보 제공 및 처리 위탁\n- 회사는 이용자의 개인정보를 본래 수집목적과 관련된 서비스 제공을 위해 사용하며, 이를 위해 이용자의 개인정보를 제공하거나 처리 위탁할 수 있습니다. 이 경우, 이용자에게 사전에 알리고 동의를 받아 진행합니다.\n5. 개인정보 수집 및 이용 동의 철회\n- 이용자는 언제든지 개인정보 수집 및 이용 동의를 철회할 수 있습니다. 동의 철회 시, 회사는 즉시 이용자의 개인정보를 파기합니다.\n\n본 동의서에 동의하지 않으실 경우 회원 가입이 불가능합니다.\n\n위와 같은 내용을 확인하고 동의합니다.\n
+"
+                        android:textColor="#575757" />
+                </ScrollView>
+
+                <CheckBox
+                    android:id="@+id/ch_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="이용약관 동의 (필수)"
+                    android:textColor="#000000" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <ScrollView
+                    android:id="@+id/sc_pri"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/view_border"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="[이용약관 동의서]\n\n주식회사 ABC는 이용자의 이용약관 동의를 전제로 본 서비스를 제공합니다. 이에 회사는 이용자의 이용약관 동의 여부를 확인 받는 것입니다.\n\n1. 이용약관의 효력 및 변경\n- 이용약관은 이용자가 동의한 시점부터 효력이 발생합니다.\n- 회사는 필요한 경우 이용약관을 변경할 수 있으며, 변경된 이용약관은 적용일자로부터 이용자에게 공지합니다.\n2. 서비스의 내용 및 이용 방법\n- 회사는 이용자에게 다양한 서비스를 제공합니다. 각 서비스의 이용 방법 및 제한 사항은 해당 서비스에 따라 별도로 안내됩니다.\n- 이용자는 회사가 제공하는 서비스를 이용함에 있어서 관련 법령 및 이용약관 등을 준수해야 합니다.\n3. 개인정보보호 및 권리 보장\n- 회사는 이용자의 개인정보를 보호하며, 개인정보 처리에 관한 정보는 개인정보처리방침에 따릅니다.\n- 이용자는 회사에게 자신의 개인정보의 보호, 열람, 정정, 삭제, 처리 정지 등을 요구할 수 있습니다.\n4. 서비스 이용의 제한 및 중지\n-이용자는 다음과 같은 행위를 하지 않아야 하며, 이를 위반할 경우 회사는 해당 이용자의 서비스 이용을 제한 또는 중지할 수 있습니다.\n-회사의 서비스 운영에 지장을 주는 행위\n- 타인의 서비스 이용 방해, 저해, 개인정보 침해 등 법률을 위반하는 행위\n- 서비스 이용 약관 위반 등 회사가 정한 이용 제한 사항 위반 행위\n5. 면책 및 책임 제한\n- 회사는 기술적 결함이나 운영상의 문제 등 불가항력적인 사유로 서비스를 제공하지 못할 경우 책임을 지지 않습니다.\n- 이용자가 제공한 정보의 정확성, 완전성, 적법성 등에 대한 책임은 이용자 본인에게 있으며, 회사는 이에 대해 어떠한 책임도 지지 않습니다.\n6. 준거\n"
+                        android:textColor="#575757" />
+                </ScrollView>
+
+                <CheckBox
+                    android:id="@+id/ch_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="개인정보 수집 및 이용 동의 (필수)"
+                    android:textColor="#000000" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/bt_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="확인" />
+    </LinearLayout>
+
+
+</LinearLayout>

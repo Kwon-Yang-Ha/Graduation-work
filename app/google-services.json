@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1065037704226",
+    "project_id": "registerlogin-dcd88",
+    "storage_bucket": "registerlogin-dcd88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065037704226:android:3801f8a93190268762ae7b",
+        "android_client_info": {
+          "package_name": "com.example.registerlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065037704226-j7r3qvd3fhe7u50oc247g54lrmuajpdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.registerlogin",
+            "certificate_hash": "80d19561ec425d8c2b9a1e11ee389e5e4eaf4da8"
+          }
+        },
+        {
+          "client_id": "1065037704226-gbemfmbsseqavcmnth0mclgealm4v4hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD58yHTve50KKcXE8LGevLzLCEi6bnnZ7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065037704226-gbemfmbsseqavcmnth0mclgealm4v4hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="330dp"
+    android:background="#AFD485"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AFD485"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="411dp"
+            android:layout_height="717dp"
+            android:background="#AFD485"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="58dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="#AFD485"
+                        android:src="@drawable/ic_search"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="1dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="59dp"
+                        android:layout_height="57dp"
+                        android:background="#AFD485"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="-2dp" />
+
+                    <ListView
+                        android:id="@+id/list_view"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:divider="@null"
+                        android:gravity="center"
+                        android:scrollbars="none"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
+                        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints,RtlCompat" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:id="@+id/trashsetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:hint="▶ 설정이 필요합니다 :)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/barcode"
+            android:layout_width="173dp"
+            android:layout_height="171dp"
+            android:background="@drawable/et_link_back2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591">
+
+            <ImageButton
+                android:id="@+id/im_ba"
+                android:layout_width="162dp"
+                android:layout_height="135dp"
+                android:backgroundTint="#AFD485"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.138"
+                app:srcCompat="@drawable/barcode" />
+
+            <TextView
+                android:id="@+id/tx_ba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recycling"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/im_ba"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="@+id/im_ba"
+                app:layout_constraintTop_toTopOf="@+id/im_ba"
+                app:layout_constraintVertical_bias="0.889" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/carmera"
+            android:layout_width="173dp"
+            android:layout_height="171dp"
+            android:background="@drawable/et_link_back2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591">
+
+            <TextView
+                android:id="@+id/tx_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카메라 인식"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/im_ca"
+                app:layout_constraintStart_toStartOf="@+id/im_ca"
+                app:layout_constraintTop_toTopOf="@+id/im_ca"
+                app:layout_constraintVertical_bias="0.887" />
+
+            <ImageButton
+                android:id="@+id/im_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AFD485"
+                android:scaleType="fitStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.116"
+                app:srcCompat="@drawable/carmera" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/board"
+            android:layout_width="362dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_link_back2"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barcode">
+
+            <TextView
+                android:id="@+id/tx_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="즐겨찾는 게시판"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114" />
+
+            <TextView
+                android:id="@+id/tx_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자유게시판"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998" />
+
+            <TextView
+                android:id="@+id/tx_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOT게시판"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.717" />
+
+            <TextView
+                android:id="@+id/tx_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIP게시판"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526" />
+
+            <TextView
+                android:id="@+id/tx_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEED게시판"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.90999997" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="219dp"
+                android:layout_height="18dp"
+                android:text="우리집 앞에 누가 쓰레기 버리고 갔는데..."
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.72" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="178dp"
+                android:layout_height="17dp"
+                android:text="대형 가전제품 신고 꿀팁!"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="175dp"
+                android:layout_height="19dp"
+                android:text="요즘 쓰레기 불법 투기 벌금형 얼마?"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35000002" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="223dp"
+                android:layout_height="19dp"
+                android:text="아이언맨 팔 한짝 필요하신 분?"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.69"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.90999997" />
+
+            <TextView
+                android:id="@+id/tx_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="더보기>"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.110000014" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
