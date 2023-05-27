@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.318">
 
         <TextView
-            android:id="@+id/hot"
+            android:id="@+id/tx_com"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HOT게시판"
@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.462">
 
         <TextView
-            android:id="@+id/free"
+            android:id="@+id/tx_me"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="자유게시판"

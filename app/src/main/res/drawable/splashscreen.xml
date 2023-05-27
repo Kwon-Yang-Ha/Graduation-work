@@ -6,8 +6,8 @@
     <item
         android:drawable="@drawable/logo"
         android:gravity="center"
-        android:height="50dp"
-        android:width="50dp"
+        android:height="1280px"
+        android:width="720px"
         />
 
 </layer-list>

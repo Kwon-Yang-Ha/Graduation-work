@@ -1,14 +1,23 @@
 package com.example.registerlogin;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.hardware.Camera;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.util.Size;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -17,8 +26,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
+
+import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
 
 public class MaainActivity extends AppCompatActivity {
 
@@ -60,7 +74,7 @@ public class MaainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_maain);
 
         TextView trashsetting = findViewById(R.id.trashsetting);
         Calendar calendar = Calendar.getInstance();
@@ -130,10 +144,6 @@ public class MaainActivity extends AppCompatActivity {
                 break;
         }
 
-
-
-
-
         ImageButton searchbutton = (ImageButton) findViewById(R.id.imageButton1);
         searchbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -201,7 +211,6 @@ public class MaainActivity extends AppCompatActivity {
         mListView.setAdapter(mAdapter);
         mHandler.postDelayed(mScrollRunnable, mDelay);
     }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -245,12 +254,35 @@ public class MaainActivity extends AppCompatActivity {
                 trashsetting.setText("토요일입니다. "+ satid +" 배출일입니다.");
                 break;
         }
-        text_more = (TextView) findViewById(R.id.tx_more);
+
+        ImageButton carmeraButton = (ImageButton) findViewById(R.id.im_ca);
+
+        carmeraButton.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(getApplicationContext(), ShootActivity.class);
+            startActivity(intent);
+        }
+    });
+
+        ImageButton recyclingButton = (ImageButton) findViewById(R.id.im_re);
+
+        recyclingButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RecyclingActivity.class);
+                startActivity(intent);
+            }
+        });
+
         text_find = (TextView) findViewById(R.id.tx_find);
         text_free = (TextView) findViewById(R.id.tx_free);
         text_hot = (TextView) findViewById(R.id.tx_hot);
         text_tip = (TextView) findViewById(R.id.tx_tip);
         text_need = (TextView) findViewById(R.id.tx_need);
+        text_more = (TextView) findViewById(R.id.tx_more);
 
 
         text_more.setOnClickListener(new View.OnClickListener() {

@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:usesCleartextTraffic="true"
@@ -21,6 +22,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RegisterLogin"
         tools:targetApi="31" >
+
+
+        <activity android:name=".RecyclingActivity"
+            android:exported="false"/>
+
+        <activity android:name=".MeActivity"
+            android:exported="false"/>
+
+        <activity android:name=".CompanyActivity"
+            android:exported="false"/>
+
+        <activity android:name=".ValidateRequest"
+            android:exported="false"/>
+
+        <activity android:name=".SearchingAdapter"
+            android:exported="false"/>
+
+        <activity android:name=".RegisterRequest"
+            android:exported="false"/>
+
+        <activity android:name=".LoginRequest"
+            android:exported="false"/>
+
+        <activity android:name=".ImageSliderAdapter"
+            android:exported="false"/>
+
         <activity android:name=".Searching"
             android:exported="false"/>
 
@@ -56,12 +83,18 @@
         <activity
             android:name=".MaainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ShootActivity"
+            android:exported="false" />
+
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,6 +104,18 @@
         <activity
             android:name=".RegisterActivity"
             tools:ignore="DuplicateActivity" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.registerlogin"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

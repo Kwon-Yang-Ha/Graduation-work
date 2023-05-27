@@ -17,8 +17,8 @@ public class BoardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
-        tx_hot = (TextView) findViewById(R.id.hot);
-        tx_free = (TextView) findViewById(R.id.free);
+        tx_hot = (TextView) findViewById(R.id.tx_com);
+        tx_free = (TextView) findViewById(R.id.tx_me);
         tx_need = (TextView) findViewById(R.id.need);
         tx_tp = (TextView) findViewById(R.id.tip);
         tx_hot.setOnClickListener(new View.OnClickListener() {
